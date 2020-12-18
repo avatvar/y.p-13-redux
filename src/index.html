@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Redux</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="p-3 container">
+        <div class="jumbotron">
+          <form class="">
+            <div class="form-group">
+              <label class="form-label" for="formSumma">Сумма</label
+              ><input
+                name="summa"
+                step="10000"
+                placeholder="Введите сумму кредита"
+                type="number"
+                id="formSumma"
+                class="form-control"
+                value="100000"
+              /><small class="text-muted form-text">Ставка: 15%</small>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="formMonths"
+                >Срок кредита, в месяцах</label
+              ><input
+                name="months"
+                placeholder="Введите кол-во месяцев"
+                type="number"
+                id="formMonths"
+                class="form-control"
+                value="36"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="formFirst"
+                >Сумма первоначального взноса</label
+              ><input
+                name="first"
+                step="10000"
+                placeholder="Введите сумму первоначального взноса"
+                type="number"
+                id="formFirst"
+                class="form-control money"
+                value="0"
+              />
+            </div>
+            <div role="alert" class="fade alert alert-success show">
+
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-success">Проверить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
